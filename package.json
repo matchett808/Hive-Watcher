@@ -1,0 +1,21 @@
+{
+  "name": "hive-watcher",
+    
+  "description": "Watch hive devices and publish to MQTT",
+  "version": "0.9999.9999",
+  "homepage": "https://github.com/matchett808/hive-watcher",
+  "author": {
+    "name": "Iain Matchett",
+    "email": "iainmatchett@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matchett808/hive-watcher.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}
