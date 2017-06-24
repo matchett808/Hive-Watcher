@@ -38,7 +38,11 @@ var run = function()
       });
       res.on('end', () => {
           store_secret(JSON.parse(body).sessions[0].id);
-          get_nodes();
+          if(watcher === null )
+          {
+              get_nodes();
+          }
+          
       });
     });
 
@@ -184,3 +188,4 @@ var report = function (n, obj)
     return;
 }
 run();
+setInterval(run, 1800000);
